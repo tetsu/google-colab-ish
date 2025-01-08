@@ -21,10 +21,10 @@
     
 1. How to access
 
-    Go to following URL on your browser. Also, use the Token which is displayed when you run the container.
+    On your web browswer, go to following URL. Use the Token which is displayed when you run the container.
 
     ```
-    http://127.0.0.1:8888/lab?token={token}
+    http://localhost:8888/lab?token={token}
     ```
 
 1. Stop the container (if you ran it in the background):
