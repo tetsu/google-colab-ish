@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  colab-like-env:
+    build:
+      context: .
+    image: colab-like-env:latest
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - TZ=Etc/UTC
+    volumes:
+      - ./workspace:/workspace
+    ports:
+      - "8888:8888"
